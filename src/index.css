@@ -1,0 +1,149 @@
+/* navbar */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+.mainContainer{
+    min-height: 80vh;
+    border: 1px solid white;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+    padding: 10px;
+}
+.posteditorbox{
+    display: flex;
+
+}
+.editor{
+    width: 60%;
+    margin-top: 10px;
+}
+.featuredImageAndSubmitBox{
+    flex-grow: 1;
+    padding: 10px;
+}
+/* header */
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.navContainer{
+    width: 80%;
+    border: 1px solid white;
+    margin: 10px 0px;
+    padding: 16px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+}
+.navLinks ul{
+    display: flex;
+    gap: 16px;
+    list-style: none;
+
+}
+.navLinks  a{
+    text-decoration:none;
+}
+.logoutBtn{
+    position: absolute;
+    right: 25px;
+    padding: 10px;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.footerContainer{
+    width: 80%;
+    border: 1px solid white;
+    padding: 10px;
+}
+/* postpreviewcard */
+.postpreviewcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.postpreviewcard{
+    position: relative;
+    width: 240px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 3px white;
+}
+.postpreviewcard img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.postpreviewcard h2{
+    text-align: center;
+    cursor: pointer;
+}
+/* post page */
+.postBox{
+    padding: 5px;
+}
+.postBox img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+.postBox .postTitle{
+    text-align: center;
+    letter-spacing: 1px;
+}
+.postBox .postContent{
+    margin-left: 15px;
+}
+
+
+
+
+.controlBtns{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 10px;
+    right: 5px;
+}
+.controlBtns button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.controlBtns .editBtn{
+    color: orange;
+}
+.controlBtns .deleteBtn{
+    color:red;
+}
